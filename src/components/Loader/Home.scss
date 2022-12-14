@@ -1,0 +1,59 @@
+@import "./../../css/color.scss";
+.cardSK {
+  margin-bottom: 3rem;
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
+  .link {
+    h2 {
+      padding: 0.9rem;
+      width: 70%;
+      border-radius: 0.2rem;
+      background-color: lightgray;
+      opacity: 1;
+      animation: animate 1s infinite reverse;
+    }
+  }
+  .date {
+    display: block;
+    padding: 0.45rem;
+    width: 10%;
+    border-radius: 0.2rem;
+    background-color: lightgray;
+    margin-top: 0.7rem;
+    animation: animate 1s infinite reverse;
+    @media (max-width: 760px) {
+      font-size: 0.9rem;
+    }
+  }
+  .tag {
+    display: inline-block;
+    padding: 0.45rem;
+    width: 10%;
+    border-radius: 0.2rem;
+    background-color: lightgray;
+    border: none;
+    margin-top: 0.7rem;
+    animation: animate 1s infinite reverse;
+  }
+  .description {
+    margin-top: 0.7rem;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    background-color: lightgray;
+    line-height: 2rem;
+    animation: animate 1s infinite reverse;
+    @media (max-width: 760px) {
+      font-size: 1rem;
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}

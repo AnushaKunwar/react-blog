@@ -1,0 +1,125 @@
+@import "./../../css/color.scss";
+
+.blog {
+  max-width: 800px;
+  width: 90%;
+  margin: 3rem auto;
+  .link {
+    text-decoration: none;
+    h3 {
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      color: #181818e7;
+    }
+  }
+  h1 {
+    font-size: 2.5rem;
+    color: #000000;
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+  .date {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: $secondary;
+    @media (max-width: 768px) {
+      font-size: 0.9rem;
+    }
+  }
+  .tag {
+    margin-top: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    padding: 0.3rem 0.5rem;
+    color: $secondary;
+    @media (max-width: 768px) {
+      font-size: 0.8rem;
+    }
+  }
+  .content {
+    margin-top: 2rem;
+    p,
+    ol,
+    ul,
+    code {
+      margin-bottom: 2.5rem;
+    }
+    code {
+      display: block;
+      padding: 1rem 1.5rem;
+      background-color: rgba(0, 0, 0, 0.05);
+      line-height: 2.5rem;
+      overflow-x: hidden;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+      @media (max-width: 768px) {
+        overflow-x: scroll;
+      }
+    }
+    p {
+      width: 100%;
+      font-size: 1.3rem;
+      line-height: 2rem;
+      @media (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 1rem;
+      color: #242121dc;
+    }
+    h2 {
+      font-size: 2rem;
+      @media (max-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+    h3 {
+      font-size: 1.8rem;
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+      }
+    }
+    ul,
+    ol {
+      margin-left: 1rem;
+      li {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.9rem;
+      }
+    }
+    blockquote {
+      background-color: rgba(173, 173, 173, 0.479);
+      p {
+        padding: 0.5rem 1rem;
+        font-style: italic;
+        color: rgba(0, 0, 0, 0.8);
+      }
+    }
+    img {
+      width: 100%;
+      margin-bottom: 1.5rem;
+      height: 25rem;
+      object-fit: cover;
+      @media (max-width: 768px) {
+        height: 15rem;
+      }
+    }
+    a {
+      color: black;
+    }
+    strong {
+      font-weight: 700;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}

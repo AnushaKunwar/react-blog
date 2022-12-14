@@ -1,0 +1,48 @@
+@import "./../../../css/color.scss";
+
+.blogs-wrapper {
+  max-width: 900px;
+  margin: 4rem auto 0;
+  padding: 0 1rem;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    h1 {
+      color: $primary;
+      @media (max-width: 900px) {
+        font-size: 1.5rem;
+      }
+    }
+    .link {
+      font-size: 2.2rem;
+      text-decoration: none;
+      color: $secondary;
+      border: 1px solid $primary;
+      border-radius: 50%;
+      padding: 0rem 0.8rem;
+    }
+  }
+  table {
+    width: 100%;
+    margin-top: 1.8rem;
+    th,
+    td {
+      .link {
+        color: $primary;
+        text-decoration: none;
+      }
+      font-size: 1rem;
+      padding: 0.5rem;
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+        &:last-child {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

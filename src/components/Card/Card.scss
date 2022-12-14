@@ -1,0 +1,50 @@
+@import "./../../css/color.scss";
+.card {
+  margin-bottom: 3rem;
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
+  .link {
+    text-decoration: none;
+    h2 {
+      font-size: 1.8rem;
+      @media (max-width: 760px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .date {
+    display: block;
+    color: $secondary;
+    font-size: 1.1rem;
+    margin-top: 0.7rem;
+    @media (max-width: 760px) {
+      font-size: 0.9rem;
+    }
+  }
+  .tag {
+    display: inline-block;
+    border: 1px solid $secondary;
+    color: black;
+    padding: 0.4rem 1.1rem;
+    border-radius: 3px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    margin-top: 0.7rem;
+    @media (max-width: 760px) {
+      font-size: 0.8rem;
+      padding: 0.35rem 1rem;
+    }
+  }
+  .description {
+    margin-top: 0.7rem;
+    font-size: 1.1rem;
+    color: $secondary;
+    line-height: 2rem;
+    @media (max-width: 760px) {
+      font-size: 1rem;
+    }
+  }
+}

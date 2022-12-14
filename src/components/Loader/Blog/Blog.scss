@@ -1,0 +1,51 @@
+@import "./../../../css/color.scss";
+
+.blogSk {
+  max-width: 800px;
+  width: 100%;
+  margin: 3rem auto;
+  animation: animate 1s infinite reverse;
+  h1 {
+    padding: 0.9rem;
+    width: 70%;
+    border-radius: 0.2rem;
+    background-color: lightgray;
+  }
+  .date {
+    padding: 0.45rem;
+    width: 10%;
+    border-radius: 0.2rem;
+    background-color: lightgray;
+    margin-top: 1.5rem !important;
+  }
+  .tag {
+    margin-top: 1rem;
+    padding: 0.4rem !important;
+    width: 10%;
+    border-radius: 0.2rem;
+    background-color: lightgray;
+    border: none !important;
+  }
+  .content {
+    margin-top: 1rem !important;
+    p {
+      width: 100%;
+      padding: 0.25rem;
+      border-radius: 0.2rem;
+      background-color: lightgray;
+      margin-bottom: 0.5rem !important;
+      &:last-child {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}

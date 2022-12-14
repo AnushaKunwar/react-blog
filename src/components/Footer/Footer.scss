@@ -1,0 +1,55 @@
+@import "./../../css/color.scss";
+.footer {
+  max-width: 800px;
+  width: 90%;
+  margin: 5rem auto 0;
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+  border-top: 2px solid rgb(233, 233, 233);
+  img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+  }
+  .text {
+    margin-left: 1.5rem;
+    h4 {
+      font-size: 1.3rem;
+      color: $primary;
+    }
+    p {
+      width: 90%;
+      margin-top: 0.5rem;
+      color: $secondary;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+  }
+  .social-wrapper {
+    margin-top: 1rem;
+    img {
+      width: 1.4rem;
+      height: 1.4rem;
+      margin-right: 1rem;
+      border-radius: 0;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    .text {
+      margin: 0;
+      text-align: center;
+      h4 {
+        margin-top: 1rem;
+      }
+      p {
+        width: 100%;
+        margin-top: 0.8rem !important;
+      }
+    }
+  }
+}
